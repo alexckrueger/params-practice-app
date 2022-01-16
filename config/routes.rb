@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/message" => "params#message"
+  get "/:message" => "params#message"
+  post "/message" => "params#message"
+  post "/:message" => "params#message"
 end
